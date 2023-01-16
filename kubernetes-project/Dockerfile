@@ -2,9 +2,9 @@ FROM centos:latest
 
 MAINTAINER NewstarCorporation
 
-RUN yes Y | dnf --disablerepo '*' --enablerepo=extras swap centos-linux-repos centos-stream-repos
+RUN dnf --disablerepo '*' --enablerepo=extras swap centos-linux-repos centos-stream-repos -y
 
-RUN  dnf distro-sync
+RUN  dnf distro-sync -y
 
 RUN  yum install -y httpd
 
