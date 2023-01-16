@@ -2,7 +2,7 @@ FROM centos:latest
 
 MAINTAINER NewstarCorporation
 
-RUN yum -y install httpd
+RUN  yum install -y httpd
 
 COPY index.html /var/www/html/
 
