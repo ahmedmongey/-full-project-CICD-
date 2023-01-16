@@ -1,6 +1,6 @@
 FROM centos:latest 
 MAINTAINER ahmed.mahmoud.mongey@gmail.com
-RUN yum install -y httpd 
+RUN yum -y install httpd 
 RUN zip
 RUN unzip 
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
