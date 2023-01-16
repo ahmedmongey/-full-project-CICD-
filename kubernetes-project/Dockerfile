@@ -4,7 +4,7 @@ MAINTAINER NewstarCorporation
 
 RUN yes Y | dnf --disablerepo '*' --enablerepo=extras swap centos-linux-repos centos-stream-repos
 
-RUN  yes Y | dnf distro-sync
+RUN  dnf distro-sync
 
 RUN  yum install -y httpd
 
